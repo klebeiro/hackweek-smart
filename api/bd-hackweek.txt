@@ -1,0 +1,6 @@
+project(id, title, id_orientador, id_orientando, id_coorientador)
+meetings(id, id_project, local, startsAt, is_confirmed_orientando, is_confirmed_orientado, is_confirmed_coorientador, observations, reason, meeting_details, id_period)
+goals(id, id_project, starts_at, ends_at, finished_at, expected_at, id_meeting_expected, id_period)
+avaliations(id, avaliation, grade, id_project)
+period(id, name, startsAt, endsAt)
+project_period(id_project, id_period, orientando_is_work)

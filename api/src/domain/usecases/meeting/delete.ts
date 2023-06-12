@@ -1,0 +1,13 @@
+import { MeetingRepository } from "@/infra/database/repositories/meeting";
+import { Meeting } from "@/domain/types/meeting";
+import { NotFound } from "@/application/helpers/errors/http";
+
+export type DeleteMeeting = (id: number) => Promise<boolean>
+
+export const deleteMeeting = (meetingRepo: MeetingRepository) => async (id: number): Promise<boolean> => {
+    const hasDeleted = (await meetingRepo.delete(id)).affected ? true : false;
+    if(!hasDeleted) {
+        throw new NotFound();
+    }
+    return hasDeleted;
+}
