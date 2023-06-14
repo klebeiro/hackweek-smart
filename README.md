@@ -1,5 +1,8 @@
 # Projeto Hackweek 2023
 
+Detalhes do evento: https://site.crateus.ufc.br/hackweek2023/
+Problema e requisitos da solução: https://docs.google.com/document/d/1-0KFU82XFYVHJ0LFxWICpKQ4sUbFSLvZewO1Ld6lVrQ/edit
+
 # API
 ## CONFIGURAÇÃO INICIAL DO AMBIENTE DE DESENVOLVIMENTO
 
